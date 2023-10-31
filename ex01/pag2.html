@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <link rel="shortcut icon" href="favicon1.ico" type="image/x-icon">
+</head>
+<body>
+    <p><a href="pag1.html" target="_self" rel="prev">Voltar para a primeira página</a></p>
+    <h1>Imagens Dinâmicas</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="ArquivosExtra/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="ArquivosExtra/foto-m.png" type="image/png">
+        <img src="ArquivosExtra/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <audio preload="metadata" controls loop>
+        <source src="ArquivosExtra/guanacast-33.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não conseguiu reproduzir o áudio.</p>
+    </audio>
+    <h1>Reproduzindo Vídeo</h1>
+    <video width="560" poster="ArquivosExtra/limoes-capa.png" controls loop>
+        <source src="ArquivosExtra/meu-video.mp4" type="video/mp4">
+        <p>Infelizmente seu navegador não conseguiu reproduzir o vídeo.</p>
+    </video>
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hfz4uDuicaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

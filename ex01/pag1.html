@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <link rel="shortcut icon" href="favicon1.ico" type="image/x-icon">
+</head>
+<body>
+    <p>Aqui você cria um parágrafo, <br> você pode usar a tag &lt;br&gt; para quebrar a linha.</p>
+    <hr color="black">
+    <div>Caso queirar colocar um emoji utilize &#x antes do codigo do emoji. &#x1F604</div>
+    <div>Caso queirar colocar um simbolo utilize & antes do codigo do simbolo. &larr;</div>
+    <!--Isto aqui é um comentário-->
+    <h1>Imagens</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU.jpeg" alt="Logo HTML"></img>
+    </body>
+    <h1>Formatações</h1>
+    <h2>Negrito</h2>
+    <p>A tag &lt;strong&gt; significa que o termo delimitado possui força dentro da frase. Logo ele aparecerá em <strong>Negrito</strong>.</p>
+    <h2>Itálico</h2>
+    <p>Para colocar um termo em itálico use &lt;em&gt; que significa que queremos dar <em>ênfase</em> (empashis).</p>
+    <h2>Marcar Texto</h2>
+    <p>Marque um texto quando quiser dar uma <mark>ênfase descomunal</mark> utilizando a tag &lt;mark&gt;.</p>
+    <h2>Texto Deletado</h2>
+    <p>Utilize a tag &lt;del&gt; para dizer que um certo trecho não deve ser <del>considerado</del>.</p>
+    <h2>Texto Inserido</h2>
+    <p>Se colocarmos um texto dentro da tag &lt;ins&gt; estamos dizendo que ele está ali e <ins>deve ser lido com atenção</ins>.</p>
+    <h2>Texto Sobrescrito e Subscrito</h2>
+    <p>A tag &lt;sub&gt; para <sup>sobrescrito</sup> e para <sub>subscrito</sub> a tag &lt;sup&gt;.</p>
+    <h2>Trecho de código</h2>
+    <p>Delimite seu código usando a tag &lt;code&gt;.</p>
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é par.')
+        else:
+            print(f'O número {num} é ímpar.')
+    </code>
+    <p>E para manter a formatação do código você pode usar a tag &lt;pre&gt;.</p>
+    <pre><code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é par.')
+        else:
+            print(f'O número {num} é ímpar.')
+    </code></pre>
+    <h2>Citações</h2>
+    <p>Para criar uma citação você pode usar a tag &lt;q&gt; (quote, que significa citar).<q>O texto vai receber automaticamente aspas, mas nenhum deslocamento.</q></p>
+    <p>Podemos criar citações mais longa (em bloco) e que tenham um parágrafo só para si. Nesse caso, utilizamos a tag &lt;blockquote&gt;</p>
+    <blockquote cite="https://arteref.com/literatura/15-citacoes-de-machado-de-assis-para-voce-usar-no-seu-dia-a-dia">
+        Esquecer é uma necessidade. A vida é uma lousa, em que o destino, para escrever um novo caso, precisa de apagar o caso escrito.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Utilize a tag &lt;abbr&gt; em <abbr title="Hyper Text Markup">HTML</abbr> para deixar claro ao usuário o significado de uma certa sigla</p>
+    <h2>Texto Invertido</h2>
+    <p>Com a tag &lt;bdo&gt; (bi-directional override) você pode inverter a posição do texto. Utilize o parâmetro dir para indicar a direção. <bdo dir="rtl">Tudo ok?</bdo></p>
+    <h1>Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="I" start=1"> <!-- 1 A a I i -->
+        <li>Ligar o Computador<li>
+        <li>Abrir o Code Studio</li>
+        <li>Escrever o Código</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <ul type="circle"> <!-- disc circle square-->
+        <li>Definir a Função</li>
+        <li>Definir as Classes</li>
+        <li>Definir as variáveis</li>
+    </ul>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site.</dd>
+    </dl>
+    <h1>Links e Âncoras</h1>
+    <h2>Link Externo</h2>
+    <p>Se quiser você pode acessar este <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a> para mais informações sobre HTML, CSS e JavaScript</p>
+    <h2>Link Interno</h2>
+    <p>Esta é a primeira página do meu site. Se você quiser, pode acessar a minha <a href="pag2.html" target="_self" rel="next">segunda pagina</a></p>
+    <h2>Link para Download</h2>
+    <ul type="square">
+        <li><a href="/ArquivosExtra/StringsPython.pdf" download="StringsPython.pdf" type="application/pdf">Download em pdf</a></li>
+    </ul>
+</html>
